@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <title>Comparación</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Tabla comparativa de lenguajes web.">
+        <meta name="description" content="Tabla comparativa de los roles de HTML, CSS y JavaScript en el desarrollo web y formulario de suscripción.">
     </head>
     <body>
 
@@ -27,41 +27,39 @@
             <section>
                 <h2>Tabla comparativa de sus roles en el desarrollo web</h2>
                 <p>
-                    La siguiente tabla resume el papel principal de cada lenguaje, el tipo de lenguaje
-                    que representa y algunos ejemplos sencillos de cómo se utiliza dentro de una página web.
+                    La siguiente tabla muestra el rol que cumple cada lenguaje dentro del desarrollo web
+                    y qué aporta a una página.
                 </p>
 
                 <table>
                     <thead>
                         <tr>
                             <th>Lenguaje</th>
-                            <th>Rol principal</th>
-                            <th>Tipo de lenguaje</th>
-                            <th>¿Qué hace?</th>
-                            <th>Ejemplo de uso</th>
+                            <th>Rol en el desarrollo web</th>
+                            <th>¿Qué aporta al sitio?</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td><strong>HTML</strong></td>
-                            <td>Define la estructura del contenido que verá el usuario en la pantalla.</td>
-                            <td>Lenguaje de marcado orientado a organizar información.</td>
-                            <td>Indica qué partes son títulos, párrafos, imágenes, listas o enlaces.</td>
-                            <td>Crear una página con un título, un texto de presentación y una imagen.</td>
+                            <td>Estructura del contenido.</td>
+                            <td>
+                                Define títulos, párrafos, imágenes, listas y enlaces que forman la página.
+                            </td>
                         </tr>
                         <tr>
                             <td><strong>CSS</strong></td>
-                            <td>Controla la apariencia visual de los elementos definidos por HTML.</td>
-                            <td>Lenguaje de hojas de estilo en cascada.</td>
-                            <td>Cambia colores, tipos de letra, tamaños, márgenes y posición de los bloques.</td>
-                            <td>Dar un color de fondo a la página y centrar los títulos en la parte superior.</td>
+                            <td>Diseño y presentación.</td>
+                            <td>
+                                Controla colores, fuentes, tamaños y la organización visual de los elementos.
+                            </td>
                         </tr>
                         <tr>
                             <td><strong>JavaScript</strong></td>
-                            <td>Añade interactividad y comportamiento a la página web.</td>
-                            <td>Lenguaje de programación ejecutado en el navegador.</td>
-                            <td>Responde a clics del usuario, modifica textos e imágenes y realiza cálculos.</td>
-                            <td>Mostrar un mensaje de bienvenida cuando el usuario presiona un botón.</td>
+                            <td>Interactividad y comportamiento.</td>
+                            <td>
+                                Permite responder a acciones del usuario y actualizar el contenido en pantalla.
+                            </td>
                         </tr>
                     </tbody>
                 </table>
@@ -71,16 +69,24 @@
 
             <section>
                 <h2>Suscripción</h2>
-                <p>Ingresa tu correo para recibir novedades:</p>
+                <p>
+                    Ingresa tus datos para recibir novedades sobre los lenguajes del desarrollo web.
+                </p>
 
                 <form action="#" method="get">
-                    <label for="nombre">Nombre:</label><br>
-                    <input type="text" id="nombre" name="nombre" required><br><br>
+                    <p>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </p>
 
-                    <label for="email">Correo:</label><br>
-                    <input type="email" id="email" name="email" required><br><br>
+                    <p>
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+                    </p>
 
-                    <button type="submit">Suscribirse</button>
+                    <p>
+                        <button type="submit">Suscribirse</button>
+                    </p>
                 </form>
             </section>
         </main>
