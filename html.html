@@ -1,74 +1,94 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <title>HTML - Información</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Introducción al lenguaje HTML: qué es, ventajas y aplicaciones.">
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <title>HTML - Información</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Introducción al lenguaje HTML: qué es, ventajas y aplicaciones.">
 
-        <header>
-            <h1>HTML (HyperText Markup Language)</h1>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="contenedor">
+            <h1>
+                <i class="fa-regular fa-file-code"></i>
+                HTML (HyperText Markup Language)
+            </h1>
+
             <nav>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="html.html">HTML</a></li>
-                    <li><a href="css.html">CSS</a></li>
-                    <li><a href="javascript.html">JavaScript</a></li>
-                    <li><a href="comparacion.html">Comparación</a></li>
+                <ul class="menu">
+                    <li><a href="index.html"><i class="fa-solid fa-house"></i>Inicio</a></li>
+                    <li><a href="html.html" class="activo"><i class="fa-regular fa-file-code"></i>HTML</a></li>
+                    <li><a href="css.html"><i class="fa-solid fa-palette"></i>CSS</a></li>
+                    <li><a href="javascript.html"><i class="fa-brands fa-square-js"></i>JavaScript</a></li>
+                    <li><a href="comparacion.html"><i class="fa-solid fa-table-list"></i>Comparación</a></li>
                 </ul>
             </nav>
-        </header>
+        </div>
+    </header>
 
-        <hr>
+    <main class="contenedor">
+        <article>
+            <h2>¿Qué es HTML?</h2>
+            <p>
+                HTML es el lenguaje que se utiliza para definir la estructura de una página web.
+                Mediante etiquetas indica qué es cada parte del contenido, como títulos, párrafos,
+                imágenes, listas o enlaces.
+            </p>
+            <p>
+                Es la base de la mayoría de sitios en internet y sirve como punto de partida para
+                aplicar estilos con CSS y añadir interactividad con JavaScript.
+            </p>
+        </article>
 
-        <main>
-            <article>
-                <h2>¿Qué es HTML?</h2>
-                <p>
-                    HTML es el lenguaje que se utiliza para definir la estructura de una página web.
-                    Mediante etiquetas indica qué es cada parte del contenido, como títulos, párrafos,
-                    imágenes, listas o enlaces.
-                </p>
-                <p>
-                    Es la base de la mayoría de sitios en internet y sirve como punto de partida para
-                    aplicar estilos con CSS y añadir interactividad con JavaScript.
-                </p>
-            </article>
+        <article>
+            <h2>Ventajas de HTML</h2>
+            <p>
+                Algunas ventajas importantes de HTML en el desarrollo web son:
+            </p>
+            <ul>
+                <li>Es sencillo de aprender y comprender.</li>
+                <li>Es un estándar compatible con los principales navegadores.</li>
+                <li>Permite organizar la información de forma clara y ordenada.</li>
+            </ul>
+        </article>
 
-            <article>
-                <h2>Ventajas de HTML</h2>
-                <p>
-                    Algunas ventajas importantes de HTML en el desarrollo web son:
-                </p>
-                <ul>
-                    <li>Es sencillo de aprender y comprender.</li>
-                    <li>Es un estándar compatible con los principales navegadores.</li>
-                    <li>Permite organizar la información de forma clara y ordenada.</li>
-                </ul>
-            </article>
+        <article>
+            <h2>Aplicaciones de HTML</h2>
+            <p>
+                HTML se emplea en diferentes tipos de sitios y proyectos en la web, por ejemplo:
+            </p>
+            <ul>
+                <li>Páginas informativas, blogs y sitios educativos.</li>
+                <li>Portales de noticias y páginas institucionales.</li>
+                <li>Estructura de tiendas en línea y catálogos de productos.</li>
+            </ul>
+        </article>
 
-            <article>
-                <h2>Aplicaciones de HTML</h2>
-                <p>
-                    HTML se emplea en diferentes tipos de sitios y proyectos en la web, por ejemplo:
-                </p>
-                <ul>
-                    <li>Páginas informativas, blogs y sitios educativos.</li>
-                    <li>Portales de noticias y páginas institucionales.</li>
-                    <li>Estructura de tiendas en línea y catálogos de productos.</li>
-                </ul>
+        <!-- Solo la galería, sin título adicional -->
+        <article>
+            <div class="galeria-lenguaje">
+                <img src="recursos/html1.jpg" alt="Logo HTML5" >
+                <img src="recursos/html2.jpg" alt="Código HTML en editor">
+                <img src="recursos/html3.png" alt="Página ilustrada con HTML5">
+            </div>
+        </article>
+    </main>
 
-                <img src="recursos/html5_logo.png" alt="Logo de HTML5" width="200">
-            </article>
-        </main>
-
-        <hr>
-
-        <footer>
+    <footer>
+        <div class="contenedor">
             <p>&copy; 2025 Elkin Guerrero. Lenguajes del desarrollo web.</p>
-        </footer>
+        </div>
+    </footer>
 
-    </body>
+</body>
 </html>
+

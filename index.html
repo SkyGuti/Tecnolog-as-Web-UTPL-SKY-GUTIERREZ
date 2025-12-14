@@ -1,69 +1,88 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <title>Inicio - Desarrollo Web</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Introducción básica a HTML, CSS y JavaScript.">
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio - Desarrollo Web</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Introducción básica a HTML, CSS y JavaScript.">
 
-        <header>
-            <h1>Introducción a los Lenguajes del Desarrollo Web</h1>
+    <!-- Tipografía Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Iconos Font Awesome (mejora sugerida) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Hoja de estilos externa -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="contenedor">
+            <h1>
+                <i class="fa-solid fa-code"></i>
+                Introducción a los Lenguajes del Desarrollo Web
+            </h1>
+
             <nav>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="html.html">HTML</a></li>
-                    <li><a href="css.html">CSS</a></li>
-                    <li><a href="javascript.html">JavaScript</a></li>
-                    <li><a href="comparacion.html">Comparación</a></li>
+                <ul class="menu">
+                    <li><a href="index.html" class="activo"><i class="fa-solid fa-house"></i>Inicio</a></li>
+                    <li><a href="html.html"><i class="fa-regular fa-file-code"></i>HTML</a></li>
+                    <li><a href="css.html"><i class="fa-solid fa-palette"></i>CSS</a></li>
+                    <li><a href="javascript.html"><i class="fa-brands fa-square-js"></i>JavaScript</a></li>
+                    <li><a href="comparacion.html"><i class="fa-solid fa-table-list"></i>Comparación</a></li>
                 </ul>
             </nav>
-        </header>
+        </div>
+    </header>
 
-        <hr>
+    <main class="contenedor">
+        <section>
+            <h2>¿Qué encontrarás aquí?</h2>
+            <p>
+                Este sitio ofrece una introducción a HTML, CSS y JavaScript,
+                los lenguajes más usados para crear páginas web modernas.
+            </p>
+            <ul class="lista-tarjetas">
+                <li>Una vista general de cada lenguaje.</li>
+                <li>Su función principal dentro de una página web.</li>
+                <li>Una comparación sencilla entre ellos.</li>
+            </ul>
+        </section>
 
-        <main>
-            <section>
-                <h2>¿Qué encontrarás aquí?</h2>
-                <p>
-                    Este sitio ofrece una introducción a HTML, CSS y JavaScript,
-                    los lenguajes más usados para crear páginas web modernas.
-                </p>
-                <ul>
-                    <li>Una vista general de cada lenguaje.</li>
-                    <li>Su función principal dentro de una página web.</li>
-                    <li>Una comparación sencilla entre ellos.</li>
-                </ul>
-            </section>
+        <section>
+            <h2>Lenguajes y funciones</h2>
+            <p>
+                Para construir una página web se combinan tres partes: estructura, diseño e interactividad.
+                <strong>HTML</strong> define la estructura y el contenido de la página;
+                <strong>CSS</strong> se encarga del aspecto visual (colores, fuentes y organización);
+                y <strong>JavaScript</strong> añade comportamiento e interactividad,
+                como respuestas a clics, mensajes y validación de formularios.
+            </p>
+        </section>
 
-            <section>
-                <h2>Lenguajes y funciones</h2>
-                <p>
-                    Para construir una página web se combinan tres partes: estructura, diseño e interactividad.
-                    HTML define la estructura y el contenido de la página; CSS se encarga del aspecto visual
-                    (colores, fuentes y organización); y JavaScript añade comportamiento e interactividad,
-                    como respuestas a clics, mensajes y validación de formularios.
-                </p>
-            </section>
-
-            <section>
-                <h2>Video Introductorio </h2>
-                <p>
-                    En este video se resume de forma breve cómo trabajan juntos HTML, CSS y JavaScript
-                    en una página web.
-                </p>
-                <video width="400" controls>
+        <section>
+            <h2><i class="fa-solid fa-play"></i> Video introductorio</h2>
+            <p>
+                En este video se resume de forma breve cómo trabajan juntos HTML, CSS y JavaScript
+                en una página web.
+            </p>
+            <div class="video-contenedor">
+                <video controls>
                     <source src="recursos/video.mp4" type="video/mp4">
+                    Tu navegador no soporta la etiqueta de video.
                 </video>
-            </section>
-        </main>
+            </div>
+        </section>
+    </main>
 
-        <hr>
-
-        <footer>
+    <footer>
+        <div class="contenedor">
             <p>&copy; 2025 Elkin Guerrero. Lenguajes del desarrollo web.</p>
-        </footer>
+        </div>
+    </footer>
 
-    </body>
+</body>
 </html>

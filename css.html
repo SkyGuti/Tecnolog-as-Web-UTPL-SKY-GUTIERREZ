@@ -1,73 +1,96 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <title>CSS - Información</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Introducción al lenguaje CSS: qué es, ventajas y aplicaciones en el diseño web.">
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <title>CSS - Información</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Introducción al lenguaje CSS: qué es, ventajas y aplicaciones en el diseño web.">
 
-        <header>
-            <h1>CSS (Cascading Style Sheets)</h1>
+    <!-- Tipografía Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Iconos Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Hoja de estilos externa común -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="contenedor">
+            <h1>
+                <i class="fa-solid fa-palette"></i>
+                CSS (Cascading Style Sheets)
+            </h1>
+
             <nav>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="html.html">HTML</a></li>
-                    <li><a href="css.html">CSS</a></li>
-                    <li><a href="javascript.html">JavaScript</a></li>
-                    <li><a href="comparacion.html">Comparación</a></li>
+                <ul class="menu">
+                    <li><a href="index.html"><i class="fa-solid fa-house"></i>Inicio</a></li>
+                    <li><a href="html.html"><i class="fa-regular fa-file-code"></i>HTML</a></li>
+                    <li><a href="css.html" class="activo"><i class="fa-solid fa-palette"></i>CSS</a></li>
+                    <li><a href="javascript.html"><i class="fa-brands fa-square-js"></i>JavaScript</a></li>
+                    <li><a href="comparacion.html"><i class="fa-solid fa-table-list"></i>Comparación</a></li>
                 </ul>
             </nav>
-        </header>
+        </div>
+    </header>
 
-        <hr>
+    <main class="contenedor">
+        <article>
+            <h2>¿Qué es CSS?</h2>
+            <p>
+                CSS es el lenguaje que se utiliza para definir la apariencia visual de una página web.
+                Trabaja junto con HTML para decidir cómo se verán los textos, imágenes y otros elementos
+                en la pantalla.
+            </p>
+            <p>
+                Con CSS se controlan colores, tipos de letra, tamaños, márgenes y la distribución
+                de los elementos, logrando un diseño más ordenado y agradable para el usuario.
+            </p>
+        </article>
 
-        <main>
-            <article>
-                <h2>¿Qué es CSS?</h2>
-                <p>
-                    CSS es el lenguaje que se utiliza para definir la apariencia visual de una página web.
-                    Trabaja junto con HTML para decidir cómo se verán los textos, imágenes y otros elementos
-                    en la pantalla.
-                </p>
-                <p>
-                    Con CSS se controlan colores, tipos de letra, tamaños, márgenes y la distribución
-                    de los elementos, logrando un diseño más ordenado y agradable para el usuario.
-                </p>
-            </article>
+        <article>
+            <h2>Ventajas de usar CSS</h2>
+            <p>
+                En el diseño de sitios web, CSS ofrece varias ventajas importantes:
+            </p>
+            <ul>
+                <li>Separa el contenido de la parte visual, lo que facilita el mantenimiento del sitio.</li>
+                <li>Permite reutilizar los mismos estilos en varias páginas del sitio.</li>
+                <li>Ayuda a mantener un diseño uniforme y más profesional en todas las secciones.</li>
+            </ul>
+        </article>
 
-            <article>
-                <h2>Ventajas de usar CSS</h2>
-                <p>
-                    En el diseño de sitios web, CSS ofrece varias ventajas importantes:
-                </p>
-                <ul>
-                    <li>Separa el contenido de la parte visual, lo que facilita el mantenimiento del sitio.</li>
-                    <li>Permite reutilizar los mismos estilos en varias páginas del sitio.</li>
-                    <li>Ayuda a mantener un diseño uniforme y más profesional en todas las secciones.</li>
-                </ul>
-            </article>
+        <article>
+            <h2>Aplicaciones de CSS</h2>
+            <p>
+                CSS se aplica cuando se quiere mejorar la presentación del contenido en la web. Algunos usos frecuentes son:
+            </p>
+            <ul>
+                <li>Dar estilo a encabezados, menús de navegación y pies de página.</li>
+                <li>Organizar el contenido en bloques o columnas para que se vea más ordenado.</li>
+                <li>Destacar botones, enlaces y mensajes importantes dentro de la página.</li>
+            </ul>
+        </article>
 
-            <article>
-                <h2>Aplicaciones de CSS</h2>
-                <p>
-                    CSS se aplica cuando se quiere mejorar la presentación del contenido en la web. Algunos usos frecuentes son:
-                </p>
-                <ul>
-                    <li>Dar estilo a encabezados, menús de navegación y pies de página.</li>
-                    <li>Organizar el contenido en bloques o columnas para que se vea más ordenado.</li>
-                    <li>Destacar botones, enlaces y mensajes importantes dentro de la página.</li>
-                </ul>
-                <img src="recursos/CSS-Logo.png" alt="Logotipo de CSS3" width="200">
-            </article>
-        </main>
+        <!-- Galería de imágenes de CSS similar a la de HTML -->
+        <article>
+            <div class="galeria-lenguaje">
+                <img src="recursos/CSS-Logo.png" alt="Logotipo de CSS3">
+                <img src="recursos/css2.jpg" alt="Código CSS en editor">
+                <img src="recursos/css3.webp" alt="Diseño web con estilos CSS">
+            </div>
+        </article>
+    </main>
 
-        <hr>
-
-        <footer>
+    <footer>
+        <div class="contenedor">
             <p>&copy; 2025 Elkin Guerrero. Lenguajes del desarrollo web.</p>
-        </footer>
+        </div>
+    </footer>
 
-    </body>
+</body>
 </html>

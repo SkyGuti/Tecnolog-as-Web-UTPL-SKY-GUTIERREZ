@@ -1,37 +1,53 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <title>Comparación</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Tabla comparativa de los roles de HTML, CSS y JavaScript en el desarrollo web y formulario de suscripción.">
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <title>Comparación</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tabla comparativa de los roles de HTML, CSS y JavaScript en el desarrollo web y formulario de suscripción.">
 
-        <header>
-            <h1>Comparación de HTML, CSS y JavaScript</h1>
+    <!-- Tipografía Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Iconos Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Hoja de estilos externa común -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="contenedor">
+            <h1>
+                <i class="fa-solid fa-table-list"></i>
+                Comparación de HTML, CSS y JavaScript
+            </h1>
+
             <nav>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="html.html">HTML</a></li>
-                    <li><a href="css.html">CSS</a></li>
-                    <li><a href="javascript.html">JavaScript</a></li>
-                    <li><a href="comparacion.html">Comparación</a></li>
+                <ul class="menu">
+                    <li><a href="index.html"><i class="fa-solid fa-house"></i>Inicio</a></li>
+                    <li><a href="html.html"><i class="fa-regular fa-file-code"></i>HTML</a></li>
+                    <li><a href="css.html"><i class="fa-solid fa-palette"></i>CSS</a></li>
+                    <li><a href="javascript.html"><i class="fa-brands fa-square-js"></i>JavaScript</a></li>
+                    <li><a href="comparacion.html" class="activo"><i class="fa-solid fa-table-list"></i>Comparación</a></li>
                 </ul>
             </nav>
-        </header>
+        </div>
+    </header>
 
-        <hr>
+    <main class="contenedor">
+        <section>
+            <h2>Tabla comparativa de sus roles en el desarrollo web</h2>
+            <p>
+                La siguiente tabla muestra el rol que cumple cada lenguaje dentro del desarrollo web
+                y qué aporta a una página.
+            </p>
 
-        <main>
-            <section>
-                <h2>Tabla comparativa de sus roles en el desarrollo web</h2>
-                <p>
-                    La siguiente tabla muestra el rol que cumple cada lenguaje dentro del desarrollo web
-                    y qué aporta a una página.
-                </p>
-
-                <table>
+            <div class="tabla-contenedor">
+                <table class="tabla-simple">
                     <thead>
                         <tr>
                             <th>Lenguaje</th>
@@ -63,39 +79,38 @@
                         </tr>
                     </tbody>
                 </table>
-            </section>
+            </div>
+        </section>
 
-            <hr>
+        <section>
+            <h2><i class="fa-regular fa-envelope"></i> Suscripción</h2>
+            <p>
+                Ingresa tus datos para recibir novedades sobre los lenguajes del desarrollo web.
+            </p>
 
-            <section>
-                <h2>Suscripción</h2>
-                <p>
-                    Ingresa tus datos para recibir novedades sobre los lenguajes del desarrollo web.
+            <form action="#" method="get" class="formulario">
+                <p class="campo-form">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
                 </p>
 
-                <form action="#" method="get">
-                    <p>
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" id="nombre" name="nombre" required>
-                    </p>
+                <p class="campo-form">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </p>
 
-                    <p>
-                        <label for="email">Correo electrónico:</label>
-                        <input type="email" id="email" name="email" required>
-                    </p>
+                <p class="campo-form">
+                    <button type="submit"><i class="fa-regular fa-paper-plane"></i> Suscribirse</button>
+                </p>
+            </form>
+        </section>
+    </main>
 
-                    <p>
-                        <button type="submit">Suscribirse</button>
-                    </p>
-                </form>
-            </section>
-        </main>
-
-        <hr>
-
-        <footer>
+    <footer>
+        <div class="contenedor">
             <p>&copy; 2025 Elkin Guerrero. Lenguajes del desarrollo web.</p>
-        </footer>
+        </div>
+    </footer>
 
-    </body>
+</body>
 </html>
