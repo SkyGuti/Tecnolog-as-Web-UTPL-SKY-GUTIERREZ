@@ -1,4 +1,4 @@
-/* Configuración global */
+/* Estilos generales */
 * {
     box-sizing: border-box;
 }
@@ -15,10 +15,10 @@ body {
 .contenedor {
     max-width: 1120px;       /* un poco más ancho */
     margin: 0 auto;
-    padding: 1rem 1.75rem;   /* algo más de aire lateral */
+    padding: 1rem 1.75rem;   /* más espacio a los lados */
 }
 
-/* Cabecera y navegación */
+/* Encabezado */
 header {
     background-color: #111827;
     border-bottom: none;
@@ -29,7 +29,7 @@ header h1 {
     font-size: 1.6rem;
     margin: 0 0 0.8rem 0;
     color: #f9fafb;
-    letter-spacing: 0.03em;  /* ligero espaciado de letras */
+    letter-spacing: 0.03em;  /* un pequeño espacio entre letras */
 }
 
 /* Menú */
@@ -52,25 +52,25 @@ header h1 {
     transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-/* Separación icono/texto en enlaces y botones */
+/* Espacio entre el ícono y el texto */
 .menu a i,
 .campo-form button i {
     margin-right: 0.35rem;
 }
 
-/* Efecto hover del menú (verde azulado) */
+/* Cambio de color al pasar el mouse */
 .menu a:hover {
-    background-color: #14b8a6;  /* teal */
+    background-color: #14b8a6;
     color: #ffffff;
 }
 
-/* Enlace de la página actual */
+/* Enlace activo (página actual) */
 .menu a.activo {
     background-color: #0f766e;
     color: #ffffff;
 }
 
-/* Área de contenido */
+/* Contenido */
 main {
     padding-top: 1.5rem;
     padding-bottom: 2.5rem;
@@ -87,7 +87,7 @@ article h2 {
     margin-bottom: 0.75rem;
 }
 
-/* Listas tipo tarjeta (página de inicio) */
+/* Lista tipo tarjeta (inicio) */
 .lista-tarjetas {
     list-style: none;
     padding: 0;
@@ -106,7 +106,7 @@ article h2 {
     box-shadow: 0 3px 8px rgba(15, 23, 42, 0.06);
 }
 
-/* Galería de la página de inicio (tarjetas con imagen) */
+/* Galería de inicio (tarjetas con imagen) */
 .galeria-inicio {
     margin-top: 1rem;
     display: flex;
@@ -134,25 +134,25 @@ article h2 {
     margin-top: 0.4rem;
 }
 
-/* Galería para páginas de HTML, CSS y JavaScript: 3 imágenes en fila */
+/* Galería de HTML/CSS/JS: imágenes en fila */
 .galeria-lenguaje {
     margin-top: 1rem;
     display: flex;
     justify-content: center;
     gap: 1rem;
-    flex-wrap: wrap;          /* por si la pantalla es pequeña */
+    flex-wrap: wrap;          /* para que se acomode en pantallas pequeñas */
 }
 
 .galeria-lenguaje img {
     width: 280px;
     height: 160px;
-    object-fit: contain;      /* muestra la imagen completa */
+    object-fit: contain;      /* para que se vea completa */
     background-color: #ffffff;
     display: block;
     border-radius: 8px;
 }
 
-/* Bloque de video */
+/* Video */
 .video-contenedor {
     margin-top: 1rem;
 }
@@ -165,13 +165,13 @@ article h2 {
     box-shadow: 0 3px 8px rgba(15, 23, 42, 0.06);
 }
 
-/* Imágenes centradas (HTML / CSS) */
+/* Imágenes centradas */
 .imagen-centro {
     text-align: center;
     margin-top: 1rem;
 }
 
-/* Figura centrada (JavaScript) */
+/* Figura centrada (imagen + texto) */
 .figura-centro {
     text-align: center;
     margin-top: 1rem;
@@ -183,7 +183,7 @@ article h2 {
     max-width: 100%;
 }
 
-/* Tabla comparativa (página Comparación) */
+/* Tabla (comparación) */
 .tabla-contenedor {
     margin-top: 1rem;
     overflow-x: auto;
@@ -212,7 +212,7 @@ article h2 {
     background-color: #f9fafb;
 }
 
-/* Formulario de suscripción */
+/* Formulario */
 .formulario {
     margin-top: 1rem;
     max-width: 400px;
@@ -265,7 +265,7 @@ footer p {
     text-align: center;
 }
 
-/* Ajustes para pantallas pequeñas */
+/* Ajustes para celular */
 @media (max-width: 768px) {
     header h1 {
         font-size: 1.3rem;
