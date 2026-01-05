@@ -4,113 +4,141 @@
     <meta charset="UTF-8">
     <title>Comparación</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Tabla comparativa de los roles de HTML, CSS y JavaScript en el desarrollo web y formulario de suscripción.">
 
-    <!-- Tipografía Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fuente -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-    <!-- Iconos Font Awesome -->
+    <!-- Iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-    <!-- Hoja de estilos externa común -->
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS propio -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
 
-    <header>
-        <div class="contenedor">
-            <h1>
-                <i class="fa-solid fa-table-list"></i>
-                Comparación de HTML, CSS y JavaScript
-            </h1>
+<body style="font-family: 'Poppins', sans-serif;">
 
-            <nav>
-                <ul class="menu">
-                    <li><a href="index.html"><i class="fa-solid fa-house"></i>Inicio</a></li>
-                    <li><a href="html.html"><i class="fa-regular fa-file-code"></i>HTML</a></li>
-                    <li><a href="css.html"><i class="fa-solid fa-palette"></i>CSS</a></li>
-                    <li><a href="javascript.html"><i class="fa-brands fa-square-js"></i>JavaScript</a></li>
-                    <li><a href="comparacion.html" class="activo"><i class="fa-solid fa-table-list"></i>Comparación</a></li>
-                </ul>
-            </nav>
+<!-- Menú -->
+<header>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <i class="fa-solid fa-code"></i> Desarrollo Web
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="html.html">HTML</a></li>
+                <li class="nav-item"><a class="nav-link" href="css.html">CSS</a></li>
+                <li class="nav-item"><a class="nav-link" href="javascript.html">JavaScript</a></li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="comparacion.html">
+                        Comparación
+                    </a>
+                </li>
+            </ul>
         </div>
-    </header>
+    </div>
+</nav>
+</header>
 
-    <main class="contenedor">
-        <section>
-            <h2>Tabla comparativa de sus roles en el desarrollo web</h2>
-            <p>
-                La siguiente tabla muestra el rol que cumple cada lenguaje dentro del desarrollo web
-                y qué aporta a una página.
-            </p>
+<!-- Contenido -->
+<main class="container my-5">
 
-            <div class="tabla-contenedor">
-                <table class="tabla-simple">
-                    <thead>
-                        <tr>
-                            <th>Lenguaje</th>
-                            <th>Rol en el desarrollo web</th>
-                            <th>¿Qué aporta al sitio?</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>HTML</strong></td>
-                            <td>Estructura del contenido.</td>
-                            <td>
-                                Define títulos, párrafos, imágenes, listas y enlaces que forman la página.
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><strong>CSS</strong></td>
-                            <td>Diseño y presentación.</td>
-                            <td>
-                                Controla colores, fuentes, tamaños y la organización visual de los elementos.
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><strong>JavaScript</strong></td>
-                            <td>Interactividad y comportamiento.</td>
-                            <td>
-                                Permite responder a acciones del usuario y actualizar el contenido en pantalla.
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+    <!-- Título -->
+    <section class="mb-5">
+        <h1 class="mb-3">
+            <i class="fa-solid fa-table-list"></i>
+            Comparación de lenguajes
+        </h1>
+        <p>
+            En esta sección se comparan los roles de HTML, CSS y JavaScript dentro del desarrollo web.
+        </p>
+    </section>
+
+    <!-- Tabla -->
+    <section class="mb-5">
+        <h2>Tabla comparativa</h2>
+
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped mt-3">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Lenguaje</th>
+                        <th>Rol</th>
+                        <th>Aporte al sitio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Estructura</td>
+                        <td>Define el contenido y la organización de la página.</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>Diseño</td>
+                        <td>Controla colores, fuentes y presentación visual.</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Interactividad</td>
+                        <td>Agrega comportamiento dinámico a la página.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Formulario -->
+    <section>
+        <h2 class="mb-3">
+            <i class="fa-regular fa-envelope"></i> Suscripción
+        </h2>
+
+        <p>
+            Completa el formulario para recibir información sobre desarrollo web.
+        </p>
+
+        <form class="row g-3 mt-2">
+            <div class="col-12 col-md-6">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" required>
             </div>
-        </section>
 
-        <section>
-            <h2><i class="fa-regular fa-envelope"></i> Suscripción</h2>
-            <p>
-                Ingresa tus datos para recibir novedades sobre los lenguajes del desarrollo web.
-            </p>
+            <div class="col-12 col-md-6">
+                <label for="email" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
 
-            <form action="#" method="get" class="formulario">
-                <p class="campo-form">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required>
-                </p>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">
+                    <i class="fa-regular fa-paper-plane"></i> Suscribirse
+                </button>
+            </div>
+        </form>
+    </section>
 
-                <p class="campo-form">
-                    <label for="email">Correo electrónico:</label>
-                    <input type="email" id="email" name="email" required>
-                </p>
+</main>
 
-                <p class="campo-form">
-                    <button type="submit"><i class="fa-regular fa-paper-plane"></i> Suscribirse</button>
-                </p>
-            </form>
-        </section>
-    </main>
+<!-- Pie de página -->
+<footer class="bg-dark text-white py-3 mt-5">
+    <div class="container text-center">
+        <p class="mb-0">
+            &copy; 2025 Elkin Guerrero. Lenguajes del desarrollo web.
+        </p>
+    </div>
+</footer>
 
-    <footer>
-        <div class="contenedor">
-            <p>&copy; 2025 Elkin Guerrero. Lenguajes del desarrollo web.</p>
-        </div>
-    </footer>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

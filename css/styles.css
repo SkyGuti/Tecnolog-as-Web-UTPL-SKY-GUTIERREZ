@@ -1,4 +1,3 @@
-/* Estilos generales */
 * {
     box-sizing: border-box;
 }
@@ -8,273 +7,33 @@ body {
     font-family: "Poppins", Arial, sans-serif;
     background-color: #f4f5f7;
     color: #222;
-    line-height: 1.6;
 }
 
-/* Contenedor principal */
-.contenedor {
-    max-width: 1120px;
-    margin: 0 auto;
-    padding: 1rem 1.75rem;
+h1, h2 {
+    font-weight: 600;
 }
 
-/* Encabezado */
-header {
-    background-color: #061426;
-    border-bottom: none;
-    color: #f9fafb;
-}
-
-header h1 {
-    font-size: 1.6rem;
-    margin: 0 0 0.8rem 0;
-    color: #f9fafb;
-    letter-spacing: 0.03em;
-}
-
-/* Menú */
-.menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 0.5rem;
-    flex-wrap: wrap;
-}
-
-.menu a {
-    display: inline-block;
-    padding: 0.4rem 0.8rem;
-    text-decoration: none;
-    color: #e5e7eb;
-    border-radius: 20px;
-    font-size: 0.95rem;
-    transition: background-color 0.2s ease, color 0.2s ease;
-}
-
-.menu a i,
-.campo-form button i {
-    margin-right: 0.35rem;
-}
-
-.menu a:hover {
-    background-color: #fb8c00;
-    color: #ffffff;
-}
-
-.menu a.activo {
-    background-color: #ef6c00;
-    color: #ffffff;
-}
-
-/* Contenido */
-main {
-    padding-top: 1.5rem;
-    padding-bottom: 2.5rem;
-}
-
-section,
-article {
-    margin-bottom: 2rem;
-}
-
-section h2,
-article h2 {
-    font-size: 1.5rem;
-    margin-bottom: 0.75rem;
-    color: #061426;
-}
-
-/* Lista tipo tarjeta (inicio) */
-.lista-tarjetas {
-    list-style: none;
-    padding: 0;
-    margin: 1rem 0 0 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 0.8rem;
-}
-
-.lista-tarjetas li {
-    background-color: #f9fafb;
-    border: 1px solid #d1d5db;
+.card {
     border-radius: 10px;
-    padding: 0.9rem;
-    font-size: 0.95rem;
-    box-shadow: 0 3px 8px rgba(15, 23, 42, 0.06);
 }
 
-/* Galería de inicio (tarjetas con imagen) */
-.galeria-inicio {
-    margin-top: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.8rem;
-}
-
-.tarjeta-img {
-    flex: 1 1 230px;
-    background-color: #f9fafb;
-    border: 1px solid #d1d5db;
-    border-radius: 10px;
-    padding: 0.6rem;
-    font-size: 0.9rem;
-    box-shadow: 0 3px 8px rgba(15, 23, 42, 0.06);
-}
-
-.tarjeta-img img {
+/* contenedor fijo para imágenes */
+.contenedor-img {
     width: 100%;
-    display: block;
-    border-radius: 6px;
-}
-
-.tarjeta-img figcaption {
-    margin-top: 0.4rem;
-}
-
-/* Galería de HTML/CSS/JS: imágenes en fila */
-.galeria-lenguaje {
-    margin-top: 1rem;
+    height: 180px;
+    background: #fff;
     display: flex;
+    align-items: center;
     justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
 }
 
-.galeria-lenguaje img {
-    width: 280px;
-    height: 160px;
-    object-fit: contain;
-    background-color: #ffffff;
-    display: block;
-    border-radius: 8px;
-}
-
-/* Video */
-.video-contenedor {
-    margin-top: 1rem;
-}
-
-.video-contenedor video {
-    width: 100%;
-    max-width: 600px;
-    display: block;
-    border-radius: 8px;
-    box-shadow: 0 3px 8px rgba(15, 23, 42, 0.06);
-}
-
-/* Imágenes centradas */
-.imagen-centro {
-    text-align: center;
-    margin-top: 1rem;
-}
-
-/* Figura centrada (imagen + texto) */
-.figura-centro {
-    text-align: center;
-    margin-top: 1rem;
-}
-
-.figura-centro img {
-    display: block;
-    margin: 0 auto 0.5rem auto;
+/* imagen controlada */
+.contenedor-img img {
     max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
 }
 
-/* Tabla (comparación) */
-.tabla-contenedor {
-    margin-top: 1rem;
-    overflow-x: auto;
-}
-
-.tabla-simple {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 0.95rem;
-    background-color: #ffffff;
-    border: 1px solid #ddd;
-}
-
-.tabla-simple th,
-.tabla-simple td {
-    padding: 0.6rem 0.8rem;
-    text-align: left;
-    border-bottom: 1px solid #e5e7eb;
-}
-
-.tabla-simple thead {
-    background-color: #e5e7eb;
-}
-
-.tabla-simple tbody tr:nth-child(even) {
-    background-color: #f9fafb;
-}
-
-/* Formulario */
-.formulario {
-    margin-top: 1rem;
-    max-width: 400px;
-}
-
-.campo-form {
-    margin-bottom: 0.9rem;
-}
-
-.campo-form label {
-    display: block;
-    margin-bottom: 0.3rem;
-    font-weight: 500;
-}
-
-.campo-form input[type="text"],
-.campo-form input[type="email"] {
-    width: 100%;
-    padding: 0.45rem 0.55rem;
-    border-radius: 4px;
-    border: 1px solid #cbd5e1;
-    font-family: inherit;
-    font-size: 0.95rem;
-}
-
-.campo-form button {
-    padding: 0.5rem 1.1rem;
-    border-radius: 4px;
-    border: none;
-    background-color: #fb8c00;
-    color: #ffffff;
-    font-size: 0.95rem;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
-}
-
-.campo-form button:hover {
-    background-color: #ef6c00;
-}
-
-/* Pie de página */
 footer {
-    background-color: #061426;
-    color: #e5e7eb;
     font-size: 0.9rem;
-}
-
-footer p {
-    margin: 0;
-    text-align: center;
-}
-
-/* Ajustes para celular */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 1.3rem;
-    }
-
-    .menu {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .menu a {
-        width: 100%;
-    }
 }

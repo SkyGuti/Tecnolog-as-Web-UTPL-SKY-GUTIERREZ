@@ -4,93 +4,131 @@
     <meta charset="UTF-8">
     <title>JavaScript - Información</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Introducción al lenguaje JavaScript: qué es, ventajas y aplicaciones en la web.">
 
-    <!-- Tipografía Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-    <!-- Iconos Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-    <!-- Hoja de estilos externa común -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
 
-    <header>
-        <div class="contenedor">
-            <h1>
-                <i class="fa-brands fa-square-js"></i>
-                JavaScript (JS)
-            </h1>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fa-solid fa-code"></i> Desarrollo Web
+            </a>
 
-            <nav>
-                <ul class="menu">
-                    <li><a href="index.html"><i class="fa-solid fa-house"></i>Inicio</a></li>
-                    <li><a href="html.html"><i class="fa-regular fa-file-code"></i>HTML</a></li>
-                    <li><a href="css.html"><i class="fa-solid fa-palette"></i>CSS</a></li>
-                    <li><a href="javascript.html" class="activo"><i class="fa-brands fa-square-js"></i>JavaScript</a></li>
-                    <li><a href="comparacion.html"><i class="fa-solid fa-table-list"></i>Comparación</a></li>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="html.html">HTML</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="css.html">CSS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="javascript.html">JavaScript</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comparacion.html">Comparación</a>
+                    </li>
                 </ul>
-            </nav>
-        </div>
-    </header>
-
-    <main class="contenedor">
-        <article>
-            <h2>¿Qué es JavaScript?</h2>
-            <p>
-                JavaScript es un lenguaje de programación que se utiliza para hacer que las páginas web
-                sean más dinámicas e interactivas. Mientras HTML define el contenido y CSS la apariencia,
-                JavaScript permite que la página responda a las acciones del usuario.
-            </p>
-            <p>
-                Con JavaScript se pueden realizar cálculos, mostrar u ocultar información, modificar textos
-                e imágenes y actualizar partes de la página sin recargarla por completo.
-            </p>
-        </article>
-
-        <article>
-            <h2>Ventajas de JavaScript</h2>
-            <p>
-                En el desarrollo web, JavaScript ofrece varias ventajas importantes:
-            </p>
-            <ul>
-                <li>Permite añadir interactividad y mejorar la experiencia del usuario.</li>
-                <li>Puede actualizar el contenido de la página sin necesidad de volver a cargarla.</li>
-                <li>Permite validar formularios directamente en el navegador.</li>
-            </ul>
-        </article>
-
-        <article>
-            <h2>Aplicaciones de JavaScript</h2>
-            <p>
-                JavaScript está presente en muchos sitios y servicios que usamos a diario. Algunos ejemplos son:
-            </p>
-            <ul>
-                <li>Formularios que revisan si los datos están completos antes de enviarse.</li>
-                <li>Menús desplegables, galerías de imágenes y efectos visuales sencillos.</li>
-                <li>Mapas interactivos y paneles que muestran información en tiempo real.</li>
-            </ul>
-        </article>
-
-        <!-- Galería de imágenes de JavaScript -->
-        <article>
-            <div class="galeria-lenguaje">
-                <img src="recursos/javascript.png" alt="Logotipo de JavaScript">
-                <img src="recursos/javascript2.jpg" alt="Código JavaScript en editor">
-                <img src="recursos/javascript3" alt="Aplicación creada con JavaScript">
             </div>
-        </article>
-    </main>
-
-    <footer>
-        <div class="contenedor">
-            <p>&copy; 2025 Elkin Guerrero. Lenguajes del desarrollo web.</p>
         </div>
-    </footer>
+    </nav>
+</header>
+
+<main class="container my-5">
+
+    <section class="mb-5">
+        <h1 class="mb-3">
+            <i class="fa-brands fa-square-js text-warning"></i>
+            JavaScript (JS)
+        </h1>
+        <p>
+            JavaScript es el lenguaje encargado de agregar interactividad y dinamismo a las páginas web.
+        </p>
+    </section>
+
+    <section class="mb-5">
+        <h2>¿Qué es JavaScript?</h2>
+        <p>
+            JavaScript permite que una página web responda a las acciones del usuario, como clics,
+            movimientos del mouse o envío de datos.
+        </p>
+        <p>
+            Junto con HTML y CSS, forma la base del desarrollo web moderno.
+        </p>
+    </section>
+
+    <section class="mb-5">
+        <h2>Ventajas de JavaScript</h2>
+        <ul class="list-group">
+            <li class="list-group-item">Mejora la experiencia del usuario.</li>
+            <li class="list-group-item">Permite actualizar contenido sin recargar la página.</li>
+            <li class="list-group-item">Se ejecuta directamente en el navegador.</li>
+        </ul>
+    </section>
+
+    <section class="mb-5">
+        <h2>Aplicaciones de JavaScript</h2>
+        <ul class="list-group">
+            <li class="list-group-item">Menús interactivos y galerías.</li>
+            <li class="list-group-item">Validación básica de formularios.</li>
+            <li class="list-group-item">Contenido dinámico y efectos visuales.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2 class="mb-3">Ejemplos visuales</h2>
+        <div class="row g-4">
+            <div class="col-12 col-md-4">
+                <div class="card shadow">
+                    <div class="contenedor-img">
+                        <img src="recursos/javascript.png" alt="Logo JavaScript">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card shadow">
+                    <div class="contenedor-img">
+                        <img src="recursos/javascript2.jpg" alt="Código JavaScript">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card shadow">
+                    <div class="contenedor-img">
+                        <img src="recursos/javascript3.jpg" alt="Ejemplo JavaScript">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="bg-dark text-white py-3 mt-5">
+    <div class="container text-center">
+        <p class="mb-0">
+            &copy; 2025 Elkin Guerrero. Lenguajes del desarrollo web.
+        </p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
