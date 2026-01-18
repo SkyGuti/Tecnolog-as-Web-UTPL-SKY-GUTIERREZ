@@ -13,12 +13,9 @@
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- CSS propio -->
-    <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body>
+<body class="bg-light" style="font-family: 'Poppins', sans-serif;">
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
@@ -44,56 +41,85 @@
 
 <main class="container my-5">
 
-    <section class="mb-5">
-        <h1><i class="fa-regular fa-file-code"></i> HTML</h1>
-        <p>HTML es el lenguaje base para crear la estructura de una página web.</p>
-    </section>
-
-    <section class="mb-5">
-        <h2>¿Qué es HTML?</h2>
-        <p>
-            HTML permite estructurar el contenido usando etiquetas como títulos,
-            párrafos, imágenes y enlaces.
+    <section class="mb-4">
+        <h1 class="mb-2">
+            <i class="fa-regular fa-file-code text-primary"></i> HTML
+        </h1>
+        <p class="text-muted mb-0">
+            HTML es el lenguaje base para crear la estructura de una página web.
         </p>
     </section>
 
     <section class="mb-5">
-        <h2>Ventajas</h2>
-        <ul class="list-group">
-            <li class="list-group-item">Fácil de aprender</li>
-            <li class="list-group-item">Compatible con todos los navegadores</li>
-            <li class="list-group-item">Base del desarrollo web</li>
-        </ul>
+        <div class="bg-white p-4 rounded shadow-sm">
+            <h2 class="h4 mb-2">¿Qué es HTML?</h2>
+            <p class="mb-0">
+                HTML permite estructurar el contenido usando etiquetas como títulos,
+                párrafos, imágenes y enlaces.
+            </p>
+        </div>
+    </section>
+
+    <section class="mb-5">
+        <h2 class="h4 mb-3">Ventajas</h2>
+
+        <div class="row g-4">
+            <div class="col-12 col-md-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fa-solid fa-circle-check text-success me-2"></i>Fácil de aprender
+                        </h5>
+                        <p class="card-text text-muted mb-0">
+                            Sus etiquetas son sencillas y se entienden rápido.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fa-solid fa-globe text-primary me-2"></i>Compatible
+                        </h5>
+                        <p class="card-text text-muted mb-0">
+                            Funciona en todos los navegadores modernos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fa-solid fa-layer-group text-warning me-2"></i>Base del desarrollo web
+                        </h5>
+                        <p class="card-text text-muted mb-0">
+                            Es el punto de partida para CSS y JavaScript.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section>
-        <h2 class="mb-3">Ejemplos visuales</h2>
-        <div class="row g-4">
+        <h2 class="h4 mb-3">Ejemplos visuales</h2>
 
-            <div class="col-md-4">
-                <div class="card shadow">
-                    <div class="contenedor-img">
-                        <img src="recursos/html1.jpg" alt="HTML logo">
-                    </div>
+        <div class="row g-4 justify-content-center">
+            <div class="col-12 col-md-5">
+                <div class="card h-100 shadow-sm">
+                    <img src="recursos/html1.png" class="card-img-top img-fluid" alt="Logo HTML">
                 </div>
             </div>
 
-            <div class="col-md-4">
-                <div class="card shadow">
-                    <div class="contenedor-img">
-                        <img src="recursos/html2.jpg" alt="Código HTML">
-                    </div>
+            <div class="col-12 col-md-5">
+                <div class="card h-100 shadow-sm">
+                    <img src="recursos/html2.webp" class="card-img-top img-fluid" alt="Código HTML">
                 </div>
             </div>
-
-            <div class="col-md-4">
-                <div class="card shadow">
-                    <div class="contenedor-img">
-                        <img src="recursos/html3.png" alt="Estructura HTML">
-                    </div>
-                </div>
-            </div>
-
         </div>
     </section>
 
@@ -106,6 +132,5 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
 </html>
